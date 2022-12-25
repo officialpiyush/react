@@ -1,14 +1,17 @@
 {
     "extends": [
+        "prettier",
         "airbnb",
-        "airbnb-typescript",
-        "prettier"
+        "airbnb-typescript"
     ],
     "parserOptions": {
         "project": "./tsconfig.json"
     },
     "rules": {
-        "quotes": ["error", "single"],
+        "quotes": [
+            "error",
+            "single"
+        ],
         "react/jsx-uses-react": "off",
         "react/react-in-jsx-scope": "off"
     }
