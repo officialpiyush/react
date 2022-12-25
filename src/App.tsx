@@ -1,6 +1,6 @@
-import { Suspense } from "react"
-import { useRoutes } from "react-router"
-import routes from "~react-pages"
+import { Suspense } from 'react';
+import { useRoutes } from 'react-router';
+import routes from '~react-pages';
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
         {useRoutes(routes)}
       </Suspense>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
