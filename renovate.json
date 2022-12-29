@@ -3,5 +3,9 @@
   "extends": [
     "config:base"
   ],
-  "yarnVersion": "3"
+  "yarnVersion": "3",
+  "schedule": [
+    "20:00 daily"
+  ],
+  "timezone": "Asia/Kolkata"
 }
