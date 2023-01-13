@@ -4,6 +4,7 @@
     "dbaeumer.vscode-eslint",
     "drknoxy.eslint-disable-snippets",
     "rvest.vs-code-prettier-eslint",
-    "esbenp.prettier-vscode"
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig"
   ]
 }
