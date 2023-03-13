@@ -1684,16 +1684,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"deep-equal@npm:^2.1.0":
-  version: 2.1.0
-  resolution: "deep-equal@npm:2.1.0"
+"deep-equal@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "deep-equal@npm:2.2.0"
   dependencies:
     call-bind: ^1.0.2
     es-get-iterator: ^1.1.2
     get-intrinsic: ^1.1.3
     is-arguments: ^1.1.1
+    is-array-buffer: ^3.0.1
     is-date-object: ^1.0.5
     is-regex: ^1.1.4
+    is-shared-array-buffer: ^1.0.2
     isarray: ^2.0.5
     object-is: ^1.1.5
     object-keys: ^1.1.1
@@ -1702,8 +1704,8 @@ __metadata:
     side-channel: ^1.0.4
     which-boxed-primitive: ^1.0.2
     which-collection: ^1.0.1
-    which-typed-array: ^1.1.8
-  checksum: a3efc772f14372d2a88bb1e414ab2218cf23cc77673521bbccbb2fc128dd8b6cccfad05eb35b9a8a4669bd7f3ecebaa137beebdf549b7be56c617bd5488ca987
+    which-typed-array: ^1.1.9
+  checksum: 46a34509d2766d6c6dc5aec4756089cf0cc137e46787e91f08f1ee0bb570d874f19f0493146907df0cf18aed4a7b4b50f6f62c899240a76c323f057528b122e3
   languageName: node
   linkType: hard
 
@@ -2686,6 +2688,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"get-intrinsic@npm:^1.2.0":
+  version: 1.2.0
+  resolution: "get-intrinsic@npm:1.2.0"
+  dependencies:
+    function-bind: ^1.1.1
+    has: ^1.0.3
+    has-symbols: ^1.0.3
+  checksum: 78fc0487b783f5c58cf2dccafc3ae656ee8d2d8062a8831ce4a95e7057af4587a1d4882246c033aca0a7b4965276f4802b45cc300338d1b77a73d3e3e3f4877d
+  languageName: node
+  linkType: hard
+
 "get-stream@npm:^6.0.0, get-stream@npm:^6.0.1":
   version: 6.0.1
   resolution: "get-stream@npm:6.0.1"
@@ -3096,6 +3109,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-array-buffer@npm:^3.0.1":
+  version: 3.0.2
+  resolution: "is-array-buffer@npm:3.0.2"
+  dependencies:
+    call-bind: ^1.0.2
+    get-intrinsic: ^1.2.0
+    is-typed-array: ^1.1.10
+  checksum: dcac9dda66ff17df9cabdc58214172bf41082f956eab30bb0d86bc0fab1e44b690fc8e1f855cf2481245caf4e8a5a006a982a71ddccec84032ed41f9d8da8c14
+  languageName: node
+  linkType: hard
+
 "is-arrayish@npm:^0.2.1":
   version: 0.2.1
   resolution: "is-arrayish@npm:0.2.1"
@@ -3453,12 +3477,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"json5@npm:^2.2.1":
-  version: 2.2.2
-  resolution: "json5@npm:2.2.2"
+"json5@npm:^2.2.3":
+  version: 2.2.3
+  resolution: "json5@npm:2.2.3"
   bin:
     json5: lib/cli.js
-  checksum: 9a878d66b72157b073cf0017f3e5d93ec209fa5943abcb38d37a54b208917c166bd473c26a24695e67a016ce65759aeb89946592991f8f9174fb96c8e2492683
+  checksum: 2a7436a93393830bce797d4626275152e37e877b265e94ca69c99e3d20c2b9dab021279146a39cdb700e71b2dd32a4cebd1514cd57cee102b1af906ce5040349
   languageName: node
   linkType: hard
 
@@ -3590,10 +3614,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"local-pkg@npm:^0.4.2":
-  version: 0.4.2
-  resolution: "local-pkg@npm:0.4.2"
-  checksum: 22be451353c25c4411b552bf01880ebc9e995b93574b2facc7757968d888356df59199cacada14162ab53bbc9da055bb692c907b4171f008dbce45a2afc777c1
+"local-pkg@npm:^0.4.3":
+  version: 0.4.3
+  resolution: "local-pkg@npm:0.4.3"
+  checksum: 7825aca531dd6afa3a3712a0208697aa4a5cd009065f32e3fb732aafcc42ed11f277b5ac67229222e96f4def55197171cdf3d5522d0381b489d2e5547b407d55
   languageName: node
   linkType: hard
 
@@ -4913,7 +4937,7 @@ __metadata:
     react-router-dom: ^6.6.1
     typescript: ^4.9.3
     vite: ^4.0.0
-    vite-plugin-pages: ^0.28.0
+    vite-plugin-pages: ^0.29.0
     vite-plugin-windicss: ^1.8.10
     windicss: ^3.5.6
   languageName: unknown
@@ -5504,26 +5528,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite-plugin-pages@npm:^0.28.0":
-  version: 0.28.0
-  resolution: "vite-plugin-pages@npm:0.28.0"
+"vite-plugin-pages@npm:^0.29.0":
+  version: 0.29.0
+  resolution: "vite-plugin-pages@npm:0.29.0"
   dependencies:
     "@types/debug": ^4.1.7
     debug: ^4.3.4
-    deep-equal: ^2.1.0
+    deep-equal: ^2.2.0
     extract-comments: ^1.1.0
     fast-glob: ^3.2.12
-    json5: ^2.2.1
-    local-pkg: ^0.4.2
+    json5: ^2.2.3
+    local-pkg: ^0.4.3
     picocolors: ^1.0.0
-    yaml: ^2.1.3
+    yaml: ^2.2.1
   peerDependencies:
     "@vue/compiler-sfc": ^2.7.0 || ^3.0.0
     vite: ^2.0.0 || ^3.0.0-0 || ^4.0.0
   peerDependenciesMeta:
     "@vue/compiler-sfc":
       optional: true
-  checksum: ca36afe9e96d6bfe3eaf9347600dce48247cc5d4f0e5d3fa1e2f7002315b2c3ff7a8fc70ef13622bc56ea7b41b110a42d8d336dec5901ada2004fbb836358cd7
+  checksum: cf899272546281447ae45ffb678e404bb82f1354c272562a57e7540c6360d976825442534eebd8bd3d0c4bae785ca662dfa994a5ff2851dd49a1c47385479f94
   languageName: node
   linkType: hard
 
@@ -5604,7 +5628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"which-typed-array@npm:^1.1.8":
+"which-typed-array@npm:^1.1.9":
   version: 1.1.9
   resolution: "which-typed-array@npm:1.1.9"
   dependencies:
@@ -5708,6 +5732,13 @@ __metadata:
   version: 2.2.0
   resolution: "yaml@npm:2.2.0"
   checksum: 6c89da40c3c553648595a476f23f7082c17e51b268ecce7ee0464302cbc1ffc20ba86f1b876688eb9c7d8f4b71dc28efbd7b3b86bf414a959ce5150831a9233f
+  languageName: node
+  linkType: hard
+
+"yaml@npm:^2.2.1":
+  version: 2.2.1
+  resolution: "yaml@npm:2.2.1"
+  checksum: 84f68cbe462d5da4e7ded4a8bded949ffa912bc264472e5a684c3d45b22d8f73a3019963a32164023bdf3d83cfb6f5b58ff7b2b10ef5b717c630f40bd6369a23
   languageName: node
   linkType: hard
 
